@@ -1,28 +1,72 @@
 *{
-    color: rgb(194, 207, 211);
+  color: rgb(194, 207, 211);
 }
 
 .navbar{
-    margin-bottom: 0;
-    border-radius: 0;
-    border-bottom: 2px solid rgb(203, 210, 212);
-    display: inline-flex;
-  }
+  margin-bottom: 0;
+  border-radius: 0;
+  border-bottom: 2px solid rgb(203, 210, 212);
+  display: inline-flex;
+}
 
 .logo{
-    height: 50px;
+  height: 50px;
+}
+
+.bg-image{
+
+  filter: blur(5px);
+  -webkit-filter: blur(10px);
+
+  height: 100%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  z-index: -10;
+
+}
+
+.carousel-item{
+  max-height: 800px;
+  overflow: hidden;
 }
 
 .carousel-item img{
-    margin: 0 auto;
-    width: 75%;
-    height: auto;
+  margin: 0 auto;
+  width: 70%;
+  height: auto;
 }
 
 .carousel-caption{
-    margin: 50px 0px;
-    background-color: rgba(15, 15, 15, 0.8);
-    border-radius: 5px;
+  margin: 0 auto;
+  background-color: rgba(15, 15, 15, 0.8);
+  width: auto;
+  
+  max-height: 100px;
+  overflow: hidden;
+}
+
+.container{
+  margin-top: 80px;
+}
+
+#title{
+  min-width: 200px;
+  display:inline-block;
+  background-color: rgba(15, 15, 15, 0.8);
+  border-radius: 50%;
+  outline: 0.2rem dashed rgb(194, 207, 211);
+  margin-bottom: 25px;
+}
+
+.row{
+  min-width: 200px;
+}
+
+.card, .card-text{
+  color: rgba(15, 15, 15, 0.8);
 }
 
 @media (width <= 600px) {
@@ -32,5 +76,10 @@
 
   .carousel-item img{
     width: 100%;
+  }
+
+  .col{
+    min-width: 200px;
+
   }
 }
