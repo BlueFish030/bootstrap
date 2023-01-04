@@ -1,0 +1,36 @@
+*{
+    color: rgb(194, 207, 211);
+}
+
+.navbar{
+    margin-bottom: 0;
+    border-radius: 0;
+    border-bottom: 2px solid rgb(203, 210, 212);
+    display: inline-flex;
+  }
+
+.logo{
+    height: 50px;
+}
+
+.carousel-item img{
+    margin: 0 auto;
+    width: 75%;
+    height: auto;
+}
+
+.carousel-caption{
+    margin: 50px 0px;
+    background-color: rgba(15, 15, 15, 0.8);
+    border-radius: 5px;
+}
+
+@media (width <= 600px) {
+  .carousel-caption {
+    display: none; 
+  }
+
+  .carousel-item img{
+    width: 100%;
+  }
+}
